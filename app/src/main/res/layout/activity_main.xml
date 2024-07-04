@@ -9,11 +9,10 @@
     tools:context=".MainActivity">
 
     <!--view pager for displaying our slides-->
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/intro_slides"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/idViewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="150dp"/>
+        android:layout_height="match_parent" />
 
     <!--on below line we are creating
         a simple linear layout-->
