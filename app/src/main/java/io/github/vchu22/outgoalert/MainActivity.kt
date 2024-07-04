@@ -98,20 +98,19 @@ class MainActivity : AppCompatActivity() {
         override fun onPageSelected(position: Int) {
             // we are calling our dots method to
             // change the position of selected dots.
-
             // on below line we are checking position and updating text view text color.
             if (position == 0) {
                 indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.grey))
                 indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideOneTV.setTextColor(resources.getColor(R.color.white))
+                indicatorSlideOneTV.setTextColor(resources.getColor(R.color.teal_200))
 
             } else if (position == 1) {
-                indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.white))
+                indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.teal_200))
                 indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.grey))
                 indicatorSlideOneTV.setTextColor(resources.getColor(R.color.grey))
             } else {
                 indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.white))
+                indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.teal_200))
                 indicatorSlideOneTV.setTextColor(resources.getColor(R.color.grey))
             }
         }

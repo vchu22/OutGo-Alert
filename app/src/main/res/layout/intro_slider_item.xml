@@ -11,7 +11,7 @@
         android:id="@+id/idTVSliderTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/intro_slide_1_title"
@@ -29,8 +29,7 @@
         android:layout_below="@id/idTVSliderTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:padding="10dp"
-        android:src="@mipmap/ic_launcher" />
+        android:padding="10dp" />
 
     <!--text view for displaying our
         slider description-->
