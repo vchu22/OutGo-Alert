@@ -6,6 +6,4 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
-    <include android:id="@+id/intro_screen" layout="@layout/intro_screen" android:visibility="visible"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
