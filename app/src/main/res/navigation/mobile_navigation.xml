@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_events"
-        android:name="io.github.vchu22.outgoalert.ui.dashboard.DashboardFragment"
+        android:name="io.github.vchu22.outgoalert.ui.events.EventsFragment"
         android:label="@string/title_events"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_events" />
 
     <fragment
         android:id="@+id/navigation_alerts"
