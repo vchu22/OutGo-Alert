@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_alerts"
-        android:name="io.github.vchu22.outgoalert.ui.notifications.NotificationsFragment"
+        android:name="io.github.vchu22.outgoalert.ui.alerts.AlertsFragment"
         android:label="@string/title_alerts"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_alerts" />
 </navigation>

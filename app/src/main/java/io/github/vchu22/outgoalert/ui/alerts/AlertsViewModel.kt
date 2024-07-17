@@ -1,13 +1,13 @@
-package io.github.vchu22.outgoalert.ui.notifications
+package io.github.vchu22.outgoalert.ui.alerts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class AlertsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is Alerts Fragment"
     }
     val text: LiveData<String> = _text
 }
