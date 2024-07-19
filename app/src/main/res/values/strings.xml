@@ -11,8 +11,14 @@
     <string name="dot_symbol">•</string>
     <string name="intro_screen_btn">Let\'s Begin</string>
 
+    <!-- Tab names-->
     <string name="title_home">Home</string>
     <string name="title_events">Events</string>
     <string name="title_alerts">Alerts</string>
     <string name="title_settings">Settings</string>
+
+    <!-- Text on Home tab-->
+    <string name="title_home_my_location">My Location</string>
+    <string name="title_home_upcoming_reminders">Upcoming Reminders</string>
+    <string name="title_home_active_alerts">Active Alerts</string>
 </resources>
