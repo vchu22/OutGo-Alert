@@ -17,19 +17,19 @@ class MainActivity : AppCompatActivity() {
 
     // skip button, slider indicator text view for 3 dots
     lateinit var skipBtn: Button
-    lateinit var indicatorSlideOneTV: TextView
-    lateinit var indicatorSlideTwoTV: TextView
-    lateinit var indicatorSlideThreeTV: TextView
+    lateinit var indicatorSlideOne: TextView
+    lateinit var indicatorSlideTwo: TextView
+    lateinit var indicatorSlideThree: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewPager = findViewById(R.id.idViewPager)
-        skipBtn = findViewById(R.id.idBtnSkip)
-        indicatorSlideOneTV = findViewById(R.id.idTVSlideOne)
-        indicatorSlideTwoTV = findViewById(R.id.idTVSlideTwo)
-        indicatorSlideThreeTV = findViewById(R.id.idTVSlideThree)
+        viewPager = findViewById(R.id.view_pager)
+        skipBtn = findViewById(R.id.btn_skip)
+        indicatorSlideOne = findViewById(R.id.intro_slide_dot_1)
+        indicatorSlideTwo = findViewById(R.id.intro_slide_dot_2)
+        indicatorSlideThree = findViewById(R.id.intro_slide_dot_3)
 
         // add click listener for skip button
         skipBtn.setOnClickListener {
@@ -90,18 +90,18 @@ class MainActivity : AppCompatActivity() {
             // calling the dots method to  change the position of selected dots.
             // on below line we are checking position and updating text view text color.
             if (position == 0) {
-                indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideOneTV.setTextColor(resources.getColor(R.color.teal_200))
+                indicatorSlideTwo.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideThree.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideOne.setTextColor(resources.getColor(R.color.teal_200))
 
             } else if (position == 1) {
-                indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.teal_200))
-                indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideOneTV.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideTwo.setTextColor(resources.getColor(R.color.teal_200))
+                indicatorSlideThree.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideOne.setTextColor(resources.getColor(R.color.grey))
             } else {
-                indicatorSlideTwoTV.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideThreeTV.setTextColor(resources.getColor(R.color.teal_200))
-                indicatorSlideOneTV.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideTwo.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideThree.setTextColor(resources.getColor(R.color.teal_200))
+                indicatorSlideOne.setTextColor(resources.getColor(R.color.grey))
             }
         }
 
