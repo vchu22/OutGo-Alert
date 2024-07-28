@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import io.github.vchu22.outgoalert.R
 import org.json.JSONObject
 
-class AlertAdapter(alertList: MutableList<JSONObject>) : RecyclerView.Adapter<AlertAdapter.ViewHolder>() {
-    private val alertList: List<JSONObject> = alertList
+class AlertAdapter(alertList: ArrayList<Alert>) : RecyclerView.Adapter<AlertAdapter.ViewHolder>() {
+    private val alertList: ArrayList<Alert> = alertList
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val weatherImage: ImageView
@@ -39,8 +39,8 @@ class AlertAdapter(alertList: MutableList<JSONObject>) : RecyclerView.Adapter<Al
 //            .load(alertList[position].getString("strMealThumb"))
 //            .centerCrop()
 //            .into(holder.weatherImage)
-//        holder.textWeather.text = alertList[position].getString("strMeal")
-//        holder.textInstructions.text = alertList[position].getString("strInstructions")
+        holder.textWeather.text = alertList[position].weather
+        holder.textInstructions.text = alertList[position].bringItems
 //        holder.weatherImage.setOnClickListener {
 //            Toast.makeText(holder.itemView.context, "alert at position $position clicked", Toast.LENGTH_SHORT).show()
 //        }
