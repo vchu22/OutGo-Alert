@@ -1,7 +1,5 @@
 package io.github.vchu22.outgoalert.ui.home
 
-import android.content.res.Resources
-import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.github.vchu22.outgoalert.databinding.FragmentHomeBinding
+
 
 data class Alert(val imageUrl: String, val weather: String, val bringItems: String)
 class HomeFragment : Fragment() {
@@ -45,8 +45,10 @@ class HomeFragment : Fragment() {
 
         activeAlertsRecyclerView = binding.activeAlertsRecyclerView
         alertAdapter = AlertAdapter(alertList)
-        activeAlertsRecyclerView.layoutManager = LinearLayoutManager(this.context)
+        activeAlertsRecyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
         activeAlertsRecyclerView.adapter = alertAdapter
+        val gridLayoutManager = GridLayoutManager(this.context, 3)
+        activeAlertsRecyclerView.setLayoutManager(gridLayoutManager)
 
         return root
     }
@@ -55,6 +57,8 @@ class HomeFragment : Fragment() {
         alertList.add(Alert("", "Rainy", "Umbrella, Rain Coat"))
         alertList.add(Alert("", "Snow", "Boots, Coat, Sweater"))
         alertList.add(Alert("", "Sunny", "Sunglasses"))
+        alertList.add(Alert("", "Thunderstorm", "Umbrella, Rain Coat"))
+        alertList.add(Alert("", "Pollen", "Mask"))
     }
 
     override fun onDestroyView() {
