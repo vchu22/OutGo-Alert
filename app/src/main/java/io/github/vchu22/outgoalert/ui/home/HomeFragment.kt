@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import io.github.vchu22.outgoalert.databinding.FragmentHomeBinding
 
 
-data class Alert(val imageUrl: String, val weather: String, val bringItems: String)
+data class Alert(val weather: String, val bringItems: String)
+
 class HomeFragment : Fragment() {
     private lateinit var alertAdapter: AlertAdapter
     private var alertList = ArrayList<Alert>()
@@ -54,11 +55,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadActiveAlerts() {
-        alertList.add(Alert("", "Rainy", "Umbrella, Rain Coat"))
-        alertList.add(Alert("", "Snow", "Boots, Coat, Sweater"))
-        alertList.add(Alert("", "Sunny", "Sunglasses"))
-        alertList.add(Alert("", "Thunderstorm", "Umbrella, Rain Coat"))
-        alertList.add(Alert("", "Pollen", "Mask"))
+        alertList.add(Alert("Rainy", "Umbrella, Rain Coat"))
+        alertList.add(Alert("Snow", "Boots, Coat, Sweater"))
+        alertList.add(Alert("Sunny", "Sunglasses"))
+        alertList.add(Alert("Thunderstorm", "Umbrella, Rain Coat"))
+        alertList.add(Alert("Pollen", "Mask"))
     }
 
     override fun onDestroyView() {

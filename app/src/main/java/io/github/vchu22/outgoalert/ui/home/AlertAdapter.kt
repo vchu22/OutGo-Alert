@@ -6,23 +6,25 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import io.github.vchu22.outgoalert.R
-import org.json.JSONObject
 
-class AlertAdapter(alertList: ArrayList<Alert>) : RecyclerView.Adapter<AlertAdapter.ViewHolder>() {
-    private val alertList: ArrayList<Alert> = alertList
+class AlertAdapter(private val alertList: ArrayList<Alert>) : RecyclerView.Adapter<AlertAdapter.ViewHolder>() {
+    private val weatherIcons = mapOf(
+        "Rainy" to R.drawable.weather_cloud_heavy_rain_rain_icon,
+        "Snow" to R.drawable.weather_cloud_snow_rain_icon,
+        "Freezing Cold" to R.drawable.weather_snow_freeze_icon,
+        "Sunny" to R.drawable.weather_sun_hot_icon,
+        "High UV" to R.drawable.weather_sun_uv_light_icon,
+        "Thunderstorm" to R.drawable.weather_thunderstorm_icon,
+        "Pollen" to R.drawable.weather_pollen
+    )
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val weatherImage: ImageView
-        var textWeather : TextView
-        val textInstructions : TextView
-
-        init {
-            // Find our RecyclerView item's ImageView for future use
-            weatherImage = view.findViewById(R.id.weather_image)
-            textWeather = view.findViewById(R.id.text_weather)
-            textInstructions = view.findViewById(R.id.text_instructions)
-        }
+        // Find our RecyclerView item's ImageView for future use
+        val weatherImage: ImageView = view.findViewById(R.id.weather_image)
+        var textWeather : TextView = view.findViewById(R.id.text_weather)
+        val textInstructions : TextView = view.findViewById(R.id.text_instructions)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,10 +37,10 @@ class AlertAdapter(alertList: ArrayList<Alert>) : RecyclerView.Adapter<AlertAdap
     override fun getItemCount() = alertList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        Glide.with(holder.itemView)
-//            .load(alertList[position].getString("strMealThumb"))
-//            .centerCrop()
-//            .into(holder.weatherImage)
+        Glide.with(holder.itemView)
+            .load(weatherIcons[alertList[position].weather])
+            .centerCrop()
+            .into(holder.weatherImage)
         holder.textWeather.text = alertList[position].weather
         holder.textInstructions.text = alertList[position].bringItems
 //        holder.weatherImage.setOnClickListener {
