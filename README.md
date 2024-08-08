@@ -1,5 +1,5 @@
 # OutGo Alert
-
+An alert app that alerts you to bring items based on outdoor weather conditions when you are about to go outdoor.
 
 # Credits
 - Home Tab Icon: <a href="https://www.freepik.com/icon/homepage_5590727#fromView=search&page=1&position=25&uuid=95c12579-f5d3-4505-bf2b-abf39cce4c25">Icon by Karacis</a>
