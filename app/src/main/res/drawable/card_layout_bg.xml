@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- First item: Background image -->
+    <item>
+        <bitmap
+            android:src="@drawable/event_work" android:gravity="fill"/>
+    </item>
+    <!-- Second item: Optional shape overlay (e.g., rounded corners) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="#50FFFFFF"/>
+            <stroke android:width="3dp" android:color="#B1BCBE" />
+        </shape>
+    </item>
+
+</layer-list>
