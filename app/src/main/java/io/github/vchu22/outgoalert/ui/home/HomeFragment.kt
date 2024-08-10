@@ -44,7 +44,7 @@ class HomeFragment : Fragment() {
         // active alerts section
         loadActiveAlerts()
 
-        activeAlertsRecyclerView = binding.activeAlertsRecyclerView
+        activeAlertsRecyclerView = binding.recyclerViewActiveAlerts
         alertAdapter = AlertAdapter(alertList)
         activeAlertsRecyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
         activeAlertsRecyclerView.adapter = alertAdapter

@@ -77,7 +77,6 @@
                     android:scaleType="fitXY"
                     android:layout_gravity="center"
                     android:src="@drawable/event_work" />
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,7 +93,7 @@
                     android:text="@string/title_home_active_alerts"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/active_alerts_recycler_view"
+                    android:id="@+id/recycler_view_active_alerts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingVertical="6sp"
