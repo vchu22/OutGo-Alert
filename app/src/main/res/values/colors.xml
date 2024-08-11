@@ -17,5 +17,5 @@
     <color name="event_card_label_txt">@color/black</color>
     <color name="event_card_start_time">@color/black</color>
     <color name="event_card_end_time">#434343</color>
-    <color name="event_card_event_name">#3AE8FF</color>
+    <color name="event_card_event_name">#13DFFA</color>
 </resources>
