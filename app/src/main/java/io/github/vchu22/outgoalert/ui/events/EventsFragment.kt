@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import io.github.vchu22.outgoalert.databinding.FragmentEventsBinding
@@ -34,6 +33,8 @@ class EventsFragment : Fragment() {
         adapter = FragmentTabPageAdapter(childFragmentManager, lifecycle)
         tabLayout.addTab(tabLayout.newTab().setText("List View"))
         tabLayout.addTab(tabLayout.newTab().setText("Calendar"))
+        tabLayout.addTab(tabLayout.newTab().setText("Import"))
+
         viewPager.adapter = adapter
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {

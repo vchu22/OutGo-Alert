@@ -10,14 +10,15 @@ class FragmentTabPageAdapter (
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {
-        return 2
+        return 3
     }
 
     override fun createFragment(position: Int): Fragment {
-        return if (position == 0)
-            FragmentEventList()
-        else
-            FragmentCalendar()
+        return when (position) {
+            0 -> FragmentEventList()
+            1 -> FragmentCalendar()
+            else -> FragmentImport()
+        }
     }
 
 }
