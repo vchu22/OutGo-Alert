@@ -21,4 +21,9 @@
     <string name="title_home_my_location">My Location</string>
     <string name="title_home_upcoming_reminder">Upcoming Reminder</string>
     <string name="title_home_active_alerts">Active Alerts</string>
+
+    <!-- Text on Events tab-->
+    <string name="repeated_events_title">Repeated Events</string>
+    <string name="onetime_events_title">One-Time Events</string>
+    <string name="add_button_text">+ Add</string>
 </resources>
