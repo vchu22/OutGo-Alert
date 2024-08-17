@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class FragmentTabPageAdapter (
+class TabPageAdapter (
     fragmentManager: FragmentManager,
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
@@ -15,9 +15,9 @@ class FragmentTabPageAdapter (
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> FragmentEventList()
-            1 -> FragmentCalendar()
-            else -> FragmentImport()
+            0 -> TabPageEventList()
+            1 -> TabPageCalendar()
+            else -> TabPageImport()
         }
     }
 

@@ -18,7 +18,7 @@ class EventsFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager2
-    private lateinit var adapter: FragmentTabPageAdapter
+    private lateinit var adapter: TabPageAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,7 +30,7 @@ class EventsFragment : Fragment() {
 
         tabLayout = binding.tabLayout
         viewPager = binding.viewPager
-        adapter = FragmentTabPageAdapter(childFragmentManager, lifecycle)
+        adapter = TabPageAdapter(childFragmentManager, lifecycle)
         tabLayout.addTab(tabLayout.newTab().setText("List View"))
         tabLayout.addTab(tabLayout.newTab().setText("Calendar"))
         tabLayout.addTab(tabLayout.newTab().setText("Import"))
