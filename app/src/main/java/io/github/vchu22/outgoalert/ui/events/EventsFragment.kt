@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import io.github.vchu22.outgoalert.databinding.FragmentEventsBinding
+import io.github.vchu22.outgoalert.ui.events.pages.TabPageAdapter
 
 class EventsFragment : Fragment() {
 

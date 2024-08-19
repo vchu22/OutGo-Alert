@@ -1,4 +1,4 @@
-package io.github.vchu22.outgoalert.ui.events
+package io.github.vchu22.outgoalert.ui.events.pages
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
