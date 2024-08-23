@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="12sp"
+    android:paddingHorizontal="24sp"
     tools:context=".ui.events.pages.TabPageImport">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/title_import_file"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Import" />
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/title_import_file"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/button_import_ics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:text="@string/button_import_ics"
+        app:layout_constraintTop_toBottomOf="@+id/title_import_file"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_export_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/title_export_calendar"
+        app:layout_constraintTop_toBottomOf="@+id/button_import_ics"/>
+
+    <Button
+        android:id="@+id/button_export_ics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:text="@string/button_export_ics"
+        app:layout_constraintTop_toBottomOf="@+id/title_export_calendar"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_connect_online_calendars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/title_connect_online_calendars"
+        app:layout_constraintTop_toBottomOf="@+id/button_export_ics"/>
+
+    <Button
+        android:id="@+id/button_connect_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:text="@string/button_connect_google"
+        app:layout_constraintTop_toBottomOf="@+id/title_connect_online_calendars"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/button_connect_microsoft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12sp"
+        android:text="@string/button_connect_microsoft"
+        app:layout_constraintTop_toBottomOf="@+id/button_connect_google"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,4 +27,11 @@
     <string name="onetime_events_title">One-Time Events</string>
     <string name="add_button_text">+ Add</string>
     <string name="title_events_on_date">Events on 01/01/2001</string>
+    <string name="title_import_file">Import File</string>
+    <string name="button_import_ics">Import calender from .ics</string>
+    <string name="title_export_calendar">Export Calendar</string>
+    <string name="button_export_ics">Export to .ics</string>
+    <string name="title_connect_online_calendars">Connect Online Calendars</string>
+    <string name="button_connect_google">Connect with Google Account</string>
+    <string name="button_connect_microsoft">Connect with Microsoft Account</string>
 </resources>
