@@ -34,4 +34,11 @@
     <string name="title_connect_online_calendars">Connect Online Calendars</string>
     <string name="button_connect_google">Connect with Google Account</string>
     <string name="button_connect_microsoft">Connect with Microsoft Account</string>
+
+    <!-- Text on Settings tab-->
+    <string name="title_backup_data">Backup Data</string>
+    <string name="button_import_data">Import Backup Data</string>
+    <string name="button_export_data">Export Backup Data</string>
+    <string name="title_reset">Reset</string>
+    <string name="button_reset_data">Reset App Data</string>
 </resources>
