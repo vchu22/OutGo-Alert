@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/idRLSlider"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--text view for displaying
         our heading-->
     <TextView
-        android:id="@+id/idTVSliderTitle"
+        android:id="@+id/intro_slide_text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -23,10 +22,10 @@
     <!--Image view for displaying
         our slider image-->
     <ImageView
-        android:id="@+id/idIVSlider"
+        android:id="@+id/intro_slide_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_below="@id/idTVSliderTitle"
+        android:layout_below="@id/intro_slide_text_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:contentDescription="@string/slider_item_desc_image"
@@ -35,10 +34,10 @@
     <!--text view for displaying our
         slider description-->
     <TextView
-        android:id="@+id/idTVSliderDescription"
+        android:id="@+id/intro_slide_text_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idIVSlider"
+        android:layout_below="@id/intro_slide_image"
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"

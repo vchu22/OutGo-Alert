@@ -23,14 +23,10 @@ class SliderAdapter(
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         // inside isViewFromobject method we are
         // returning our Relative layout object.
-        // inside isViewFromobject method we are
-        // returning our Relative layout object.
         return view === `object` as RelativeLayout
     }
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        // in this method we will initialize all our layout
-        // items and inflate our layout file as well.
         // in this method we will initialize all our layout
         // items and inflate our layout file as well.
         val layoutInflater: LayoutInflater =
@@ -38,22 +34,19 @@ class SliderAdapter(
 
         // below line is use to inflate the
         // layout file which we created.
-
-        // below line is use to inflate the
-        // layout file which we created.
         val view: View = layoutInflater.inflate(R.layout.item_intro_slider, container, false)
 
         // on below line we are initializing our image view,
         // heading text view and description text view with their ids.
-        val imageView: ImageView = view.findViewById(R.id.idIVSlider)
-        val sliderHeadingTV: TextView = view.findViewById(R.id.idTVSliderTitle)
-        val sliderDescTV: TextView = view.findViewById(R.id.idTVSliderDescription)
+        val sliderHeading: TextView = view.findViewById(R.id.intro_slide_text_title)
+        val imageView: ImageView = view.findViewById(R.id.intro_slide_image)
+        val sliderDesc: TextView = view.findViewById(R.id.intro_slide_text_description)
 
         // on below line we are setting data to our text view
         // and image view on below line.
         val sliderData: SliderData = sliderList.get(position)
-        sliderHeadingTV.text = sliderData.slideTitle
-        sliderDescTV.text = sliderData.slideDescription
+        sliderHeading.text = sliderData.slideTitle
+        sliderDesc.text = sliderData.slideDescription
         imageView.setImageResource(sliderData.slideImage)
 
         // on below line we are adding our view to container.
@@ -64,8 +57,6 @@ class SliderAdapter(
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
-        // this is a destroy view method
-        // which is use to remove a view.
         // this is a destroy view method
         // which is use to remove a view.
         container.removeView(`object` as RelativeLayout)
