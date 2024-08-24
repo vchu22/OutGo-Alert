@@ -41,7 +41,7 @@ class SliderAdapter(
 
         // below line is use to inflate the
         // layout file which we created.
-        val view: View = layoutInflater.inflate(R.layout.intro_slider_item, container, false)
+        val view: View = layoutInflater.inflate(R.layout.item_intro_slider, container, false)
 
         // on below line we are initializing our image view,
         // heading text view and description text view with their ids.

@@ -22,14 +22,14 @@ class AlertAdapter(private val alertList: ArrayList<Alert>) : RecyclerView.Adapt
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // Find our RecyclerView item's ImageView for future use
-        val weatherImage: ImageView = view.findViewById(R.id.weather_image)
+        val weatherImage: ImageView = view.findViewById(R.id.weather_icon)
         var textWeather : TextView = view.findViewById(R.id.text_weather)
         val textInstructions : TextView = view.findViewById(R.id.text_instructions)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_home_alert_item, parent, false)
+            .inflate(R.layout.item_fragment_home_alert, parent, false)
 
         return ViewHolder(view)
     }
