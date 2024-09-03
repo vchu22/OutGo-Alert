@@ -17,7 +17,7 @@
             android:id="@+id/weather_icon"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:contentDescription="@string/alert_item_desc_weather_icon"
+            android:contentDescription="@string/desc_weather_icon"
             app:layout_constraintTop_toTopOf="parent"/>
         <TextView
             android:id="@+id/text_weather"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="10dp"
             android:textStyle="bold"
-            android:text="@string/alert_item_text_weather" />
+            android:text="@string/text_weather" />
 
         <TextView
             android:id="@+id/text_instructions"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
-            android:text="@string/alert_item_text_instructions"
+            android:text="@string/text_instructions"
             app:layout_constraintTop_toBottomOf="@+id/text_weather"/>
 
     </LinearLayout>

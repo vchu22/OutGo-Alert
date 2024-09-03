@@ -47,8 +47,8 @@
     <string name="button_reset_data">Reset App Data</string>
 
     <!-- Text on RecyclerView items -->
-    <string name="alert_item_desc_weather_icon">Weather Icon</string>
-    <string name="alert_item_text_weather">Weather</string>
-    <string name="alert_item_text_instructions">Instructions</string>
+    <string name="desc_weather_icon">Weather Icon</string>
+    <string name="text_weather">Weather</string>
+    <string name="text_instructions">Instructions</string>
     <string name="slider_item_desc_image">Slider Image</string>
 </resources>
