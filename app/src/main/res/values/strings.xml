@@ -35,6 +35,10 @@
     <string name="button_connect_google">Connect with Google Account</string>
     <string name="button_connect_microsoft">Connect with Microsoft Account</string>
 
+    <!-- Text on Alerts tab-->
+    <string name="title_saved_alerts">Saved Alerts</string>
+    <string name="desc_saved_alerts">The following are the weather conditions to notify and their respective reminders for items to bring. Click on the + button to add a new alert type. To edit the details of an existing alert type, click on the item and enter the details on the next page.</string>
+
     <!-- Text on Settings tab-->
     <string name="title_backup_data">Backup Data</string>
     <string name="button_import_data">Import Backup Data</string>
