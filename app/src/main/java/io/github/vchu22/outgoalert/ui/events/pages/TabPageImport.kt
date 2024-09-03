@@ -16,6 +16,6 @@ class TabPageImport : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.tab_page_import, container, false)
+        return inflater.inflate(R.layout.page_events_import, container, false)
     }
 }
