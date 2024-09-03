@@ -23,9 +23,9 @@
     <string name="title_home_active_alerts">Active Alerts</string>
 
     <!-- Text on Events tab-->
-    <string name="repeated_events_title">Repeated Events</string>
-    <string name="onetime_events_title">One-Time Events</string>
-    <string name="add_button_text">+ Add</string>
+    <string name="title_repeated_events">Repeated Events</string>
+    <string name="title_onetime_events">One-Time Events</string>
+    <string name="button_add">+ Add</string>
     <string name="title_events_on_date">Events on 01/01/2001</string>
     <string name="title_import_file">Import File</string>
     <string name="button_import_ics">Import calender from .ics</string>
