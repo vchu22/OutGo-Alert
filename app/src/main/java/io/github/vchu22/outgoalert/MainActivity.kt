@@ -1,11 +1,13 @@
 package io.github.vchu22.outgoalert
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
     // a variable for view pager
@@ -90,22 +92,26 @@ class MainActivity : AppCompatActivity() {
             // calling the dots method to  change the position of selected dots.
             // on below line we are checking position and updating text view text color.
             if (position == 0) {
-                indicatorSlideTwo.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideThree.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideOne.setTextColor(resources.getColor(R.color.teal_200))
+                indicatorSlideTwo.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
+                indicatorSlideThree.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
+                indicatorSlideOne.setTextColor(ContextCompat.getColor(requireContext(), R.color.teal_200))
 
             } else if (position == 1) {
-                indicatorSlideTwo.setTextColor(resources.getColor(R.color.teal_200))
-                indicatorSlideThree.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideOne.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideTwo.setTextColor(ContextCompat.getColor(requireContext(), R.color.teal_200))
+                indicatorSlideThree.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
+                indicatorSlideOne.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
             } else {
-                indicatorSlideTwo.setTextColor(resources.getColor(R.color.grey))
-                indicatorSlideThree.setTextColor(resources.getColor(R.color.teal_200))
-                indicatorSlideOne.setTextColor(resources.getColor(R.color.grey))
+                indicatorSlideTwo.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
+                indicatorSlideThree.setTextColor(ContextCompat.getColor(requireContext(), R.color.teal_200))
+                indicatorSlideOne.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey))
             }
         }
 
         // below method is use to check scroll state.
         override fun onPageScrollStateChanged(state: Int) {}
+    }
+
+    private fun requireContext(): Context {
+        return this
     }
 }
