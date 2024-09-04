@@ -1,15 +1,14 @@
 <resources>
     <string name="app_name">OutGo Alert</string>
 
-    <string name="intro_slide_1_title">Alert Weather Conditions</string>
-    <string name="intro_slide_1_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
-    <string name="intro_slide_2_title">Intro Screen Slide 2</string>
-    <string name="intro_slide_2_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
-    <string name="intro_slide_3_title">Intro Screen Slide 3</string>
-    <string name="intro_slide_3_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
-    <string name="intro_skip_btn">Skip</string>
+    <string name="title_intro_slide_1">Alert Weather Conditions</string>
+    <string name="desc_intro_slide_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
+    <string name="title_intro_slide_2">Intro Screen Slide 2</string>
+    <string name="desc_intro_slide_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
+    <string name="title_intro_slide_3">Intro Screen Slide 3</string>
+    <string name="desc_intro_slide_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
+    <string name="button_intro_skip">Skip</string>
     <string name="dot_symbol">•</string>
-    <string name="intro_screen_btn">Let\'s Begin</string>
 
     <!-- Tab names-->
     <string name="title_home">Home</string>

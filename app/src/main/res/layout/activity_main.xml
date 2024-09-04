@@ -88,7 +88,7 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/button_color"
             android:padding="4dp"
-            android:text="@string/intro_screen_btn"
+            android:text="@string/button_intro_skip"
             android:textAllCaps="false"
             android:textColor="@color/white" />
 

@@ -44,24 +44,24 @@ class MainActivity : AppCompatActivity() {
         // add data to list
         sliderList.add(
             SliderData(
-                getResources().getString(R.string.intro_slide_1_title),
-                getResources().getString(R.string.intro_slide_1_text),
+                getResources().getString(R.string.title_intro_slide_1),
+                getResources().getString(R.string.desc_intro_slide_1),
                 R.drawable.intro_slide_1
             )
         )
 
         sliderList.add(
             SliderData(
-                getResources().getString(R.string.intro_slide_2_title),
-                getResources().getString(R.string.intro_slide_2_text),
+                getResources().getString(R.string.title_intro_slide_2),
+                getResources().getString(R.string.desc_intro_slide_2),
                 R.drawable.intro_slide_2
             )
         )
 
         sliderList.add(
             SliderData(
-                getResources().getString(R.string.intro_slide_3_title),
-                getResources().getString(R.string.intro_slide_3_text),
+                getResources().getString(R.string.title_intro_slide_3),
+                getResources().getString(R.string.desc_intro_slide_3),
                 R.drawable.intro_slide_3
             )
         )
