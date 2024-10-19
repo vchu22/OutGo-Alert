@@ -53,13 +53,18 @@ class HomeFragment : Fragment() {
 
         return root
     }
-
-    private fun loadActiveAlerts() {
+    private fun loadDemoItems() {
         alertList.add(Alert("Rainy", "Umbrella, Rain Coat"))
         alertList.add(Alert("Snow", "Boots, Coat, Sweater"))
         alertList.add(Alert("Sunny", "Sunglasses"))
         alertList.add(Alert("Thunderstorm", "Umbrella, Rain Coat"))
         alertList.add(Alert("Pollen", "Mask"))
+    }
+
+    private fun loadActiveAlerts() {
+        if (alertList.size == 0) {
+            loadDemoItems()
+        }
     }
 
     override fun onDestroyView() {
