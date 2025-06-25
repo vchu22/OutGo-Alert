@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.vchu22.outgoalert"
+    namespace = "com.example.outgoalert"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "io.github.vchu22.outgoalert"
+        applicationId = "com.example.outgoalert"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
